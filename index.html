@@ -26,6 +26,7 @@
     nav h2 {
       margin: 0;
       font-weight: 600;
+      color: #333;
     }
     nav ul {
       display: flex;
@@ -295,6 +296,7 @@ ul li a:hover span:nth-child(9) { animation-delay: 0.4s; }
   font-size: 28px;
   margin-bottom: 10px;
   font-weight: 600;
+  color: #333;
 }
 
 #about-section .about-text p {
@@ -335,10 +337,45 @@ body.dark-mode #themeToggle {
   color: #000;
 }
 
+/* Dark mode adjustments */
+
+/* Navbar */
+body.dark-mode nav h2 {
+  color: #e0e0e0; /* NAME text */
+}
+
+body.dark-mode nav ul li a {
+  color: #e0e0e0; /* links text */
+}
+
+/* Header */
+body.dark-mode header h1 {
+  color: #ffffff;
+}
+
+body.dark-mode header p {
+  color: #cccccc;
+}
+
+/* About section */
+body.dark-mode #about-section .about-text h2 {
+  color: #ffffff;
+}
+
+body.dark-mode #about-section .about-text p {
+  color: #cccccc;
+}
+
+/* Ensure card text is readable */
+body.dark-mode .card h3,
+body.dark-mode .card p {
+  color: #f0f0f0;
+}
+
 
 </style>
 </head>
-<body class="dark-mode">
+<body>
 
 <nav>
   <h2>NAME</h2>
@@ -368,16 +405,17 @@ body.dark-mode #themeToggle {
 </nav>
 
 <header>
-  <h1 class="">Te2 test1 execution..</h1>
+  <h1>Your Name Here</h1>
   <p>Your Job roles and Exp</p>
 </header>
 
-<section id="about-section" style="padding: 60px 40px; display: flex; align-items: center; gap: 40px;">
+<section id="about-section" style="padding: 60px 40px; display: flex; align-items: center; gap: 40px;" class="">
   
   <!-- Square Image Side -->
-  <div class="about-image-wrapper" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-    <img src="https://via.placeholder.com/400" style="width: 100%; max-width: 400px; aspect-ratio: 1/1; object-fit: cover; border-radius: 10px;">
-  </div>
+<div class="about-image-wrapper editable-img-wrapper" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+  <img src="https://images.unsplash.com/photo-1760662018512-e881f06d0fe0?ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8&amp;auto=format&amp;fit=crop&amp;q=60&amp;w=500" style="width: 100%; max-width: 400px; aspect-ratio: 1/1; object-fit: cover; border-radius: 25px;" class="">
+</div>
+
 
   <!-- Text Side -->
   <div class="about-text" style="flex: 1;">
@@ -389,7 +427,7 @@ body.dark-mode #themeToggle {
   </div>
 
 </section>
-
+<br>
 <h1 style="display: flex; justify-content: center;">PROJECTS</h1>
 <div class="grid">
   <div class="card">
@@ -421,6 +459,8 @@ body.dark-mode #themeToggle {
 <footer>
   <p>- - -  Developer By Lokash  - - -</p>
 </footer>
+
+
 
 
 
